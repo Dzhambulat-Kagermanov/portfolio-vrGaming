@@ -25,9 +25,9 @@ const socialSwiper = new Swiper('.social-block__slider', {
 		clickable: true,
 	},
 	speed: 700,
-	// autoplay: {
-	// 	delay: 3000,
-	// },
+	autoplay: {
+	  delay: 3000,
+	},
 	breakpoints: {
 		0: {
 			slidesPerView: 1,
