@@ -1,0 +1,54 @@
+:root {
+	--var: red;
+	--mainPurple: #2d1e6b;
+	--purple: #9f6bfa;
+	--lightPurple: #8a88f1;
+	--pink: #ec29fc;
+	--grey: rgb(172, 172, 172);
+	--darkGrey: rgb(34, 34, 34);
+	--greyGradient: linear-gradient(
+		45deg,
+		rgba(255, 255, 255, 0.1),
+		rgba(217, 217, 217, 0.1)
+	);
+	--purpleGradient: linear-gradient(45deg, var(--purple) 20%, var(--pink) 65%);
+}
+body {
+	background-color: var(--mainPurple);
+	color: white;
+}
+.container {
+	overflow: hidden;
+	max-width: 1920px;
+	margin: 0 auto;
+	position: relative;
+}
+.wrapper {
+	width: 100%;
+	position: relative;
+}
+.inner {
+	max-width: 1660px;
+	margin: 0 auto;
+	padding: 0 20px;
+	position: relative;
+}
+.--dev {
+	background-color: pink;
+}
+.--parentBlock {
+	margin: 0 0 90px 0;
+}
+.--flexCenterJC {
+	display: flex;
+	justify-content: center;
+}
+.--flexCenterAI {
+	display: flex;
+	align-items: center;
+}
+.--flexCenterFULL {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

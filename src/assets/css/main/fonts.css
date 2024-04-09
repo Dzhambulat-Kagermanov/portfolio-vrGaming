@@ -1,0 +1,16 @@
+@font-face {
+	font-family: OndoB;
+	src: url('../../fonts/Ondo-Bold.ttf');
+}
+@font-face {
+	font-family: LatoR;
+	src: url('../../fonts/Lato-Regular.ttf');
+}
+@font-face {
+	font-family: LatoM;
+	src: url('../../fonts/Lato-Medium.ttf');
+}
+@font-face {
+	font-family: LatoB;
+	src: url('../../fonts/Lato-Bold.ttf');
+}

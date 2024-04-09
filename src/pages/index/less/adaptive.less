@@ -1,0 +1,563 @@
+@media screen and (max-width: 1660px) {
+	// INFO
+	.info-block {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 1280px) {
+	// FAVORITE
+	.favorite-block__slider {
+		height: 320px;
+		.swiper-wrapper {
+			.favorite-slider-line__item {
+				&.swiper-slide-next {
+					height: 320px;
+				}
+			}
+		}
+	}
+	// INFO
+	.info-block {
+		padding: 35px 50px;
+	}
+	.info-block__subtitle {
+		margin: 15px 0 25px 0;
+	}
+	.info-block__decoration {
+		width: 545px;
+		height: 490px;
+	}
+	.info-block__content {
+		max-width: 440px;
+	}
+}
+@media screen and (max-width: 1024px) {
+	// INFO
+	.info-block {
+		justify-content: flex-start;
+	}
+	.info-block__decoration {
+		left: auto;
+		right: 0;
+		scale: -1 1;
+	}
+	.info-block__decoration {
+		img {
+			filter: blur(2px);
+		}
+	}
+	// TOP GAMES
+	.topGames-block__group {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 40px;
+	}
+	// SOCIAL
+	.social-slider__item {
+		.social-slider-item__decoration {
+			right: 35px;
+			img {
+				width: 35px;
+			}
+		}
+	}
+	.social-slider-item__author {
+		.comp-text-lato-m-3 {
+			font-size: 16px;
+		}
+	}
+	// FOOTER
+	.footer-block__content {
+		.footer-block-nav__wrapper {
+			column-gap: 60px;
+			.footer-block__nav {
+				.footer-nav__link {
+					a {
+						text-wrap: nowrap;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 850px) {
+	// FAVORITE
+	.favorite-block__slider {
+		height: 280px;
+		.swiper-wrapper {
+			.favorite-slider-line__item {
+				padding: 13px;
+				&.swiper-slide-next {
+					height: 280px;
+				}
+			}
+		}
+	}
+	// INFO
+	.info-block {
+		.comp-text-ondo-b-4 {
+			font-size: 36px;
+		}
+	}
+	.info-block__content {
+		max-width: none;
+	}
+	.info-block__decoration {
+		width: auto;
+		height: 100%;
+	}
+	// TOP GAMES
+	.topGames-block__title {
+		.comp-text-ondo-b-5 {
+			font-size: 46px;
+			line-height: 60px;
+		}
+	}
+	// SOCIAL
+	.social-slider__item {
+		.social-slider-item__bar {
+			align-items: flex-start;
+			justify-content: flex-start;
+			flex-flow: wrap column;
+			row-gap: 10px;
+			.social-slider-author__verified {
+				align-self: flex-end;
+			}
+		}
+	}
+	// FOOTER
+	.footer-block {
+		padding: 100px 0 45px 0;
+	}
+	.footer-block__content {
+		.footer-block-nav__wrapper {
+			column-gap: 35px;
+			.footer-block__nav {
+				.footer-nav__title {
+					margin: 0px 0 5px 0;
+				}
+				.footer-nav__link {
+					a {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+		.footer-block__info .footer-info__text {
+			margin: 15px 0 0 0;
+			line-height: 27px;
+			h2 {
+				font-size: 16px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	// UI
+	.comp-text-ondo-b-5 {
+		line-height: 45px;
+		font-size: 38px;
+	}
+	.--parentBlock {
+		margin: 0 0 30px 0;
+	}
+	// HEADER
+	.header-block {
+		padding: 20px 0;
+		.header-block__nav {
+			display: none;
+		}
+	}
+	.header-block__basket {
+		display: none;
+	}
+	.header-block__burger {
+		display: flex;
+	}
+	// HEAD
+	.--headContainer {
+		padding: 115px 0 70px 0;
+	}
+	.favorite-block {
+		.favorite-block__subtitle {
+			margin: 15px 0 40px 0;
+		}
+	}
+	// FAVORITE
+	.favorite-block__slider {
+		overflow: hidden !important;
+		margin: 0 auto 30px auto;
+		width: 80%;
+		.swiper-wrapper {
+			.favorite-slider-line__item {
+				padding: 20px;
+				&.swiper-slide-active {
+					transform: scale(1);
+					&::after {
+						position: absolute;
+						left: 50%;
+						top: 50%;
+						transform: translate(-50%, -50%);
+						content: '';
+						display: block;
+						width: 100%;
+						height: 100%;
+						background-image: url('../assets/images/favorite/borderBackground.png');
+						background-size: cover;
+						background-repeat: no-repeat;
+						background-position: center center;
+					}
+				}
+				&.swiper-slide-next {
+					transform: scale(1);
+					&::after {
+						content: none;
+					}
+				}
+			}
+		}
+		.favorite-slider__nav {
+			&.--prev {
+				left: 30px;
+			}
+			&.--next {
+				right: 30px;
+			}
+		}
+	}
+	// TOP GAMES
+	.topGames-block__group {
+		gap: 20px;
+	}
+	.topGames-block__sort {
+		grid-template-columns: repeat(2, 1fr);
+		margin: 40px 0;
+		gap: 20px;
+	}
+	// FOOTER
+	.footer-block__content {
+		flex-wrap: wrap;
+		column-gap: 0;
+		row-gap: 35px;
+
+		.footer-block__info {
+			max-width: none;
+			order: 1;
+		}
+	}
+	.footer-block__content {
+		.footer-block-nav__wrapper {
+			width: 100%;
+			justify-content: space-between;
+			.footer-block__nav {
+				.footer-nav__title {
+					margin: 0 0 15px 0;
+					h2 {
+						font-size: 20px;
+					}
+				}
+				.footer-nav__link {
+					a {
+						font-size: 18px;
+					}
+				}
+			}
+		}
+	}
+	.footer-block__partners {
+		margin: 50px 0;
+		justify-content: center;
+		flex-wrap: wrap;
+		column-gap: 45px;
+		row-gap: 25px;
+	}
+}
+@media screen and (max-width: 600px) {
+	// UI
+	.---gradient-btns {
+		justify-content: space-between;
+	}
+	.---gradient-btn {
+		width: 210px;
+		height: 75px;
+	}
+	// HEAD
+	.head-block {
+		.head-block__info {
+			margin: 40px 0 0 0;
+			justify-content: space-between;
+		}
+	}
+	// BILLBOARD
+	.billboard-block {
+		padding: 15px;
+		column-gap: 50px;
+		.comp-text-ondo-b-3 {
+			font-size: 20px;
+		}
+	}
+	// INFO
+	.info-block {
+		.comp-text-ondo-b-4 {
+			font-size: 27px;
+		}
+	}
+	// TOP GAMES
+	.topGames-block__group {
+		grid-template-columns: 100%;
+	}
+	// FOOTER
+	.footer-block__content {
+		.footer-block__info {
+			.footer-info__text {
+				h2 {
+					font-size: 14px;
+					line-height: 25px;
+				}
+			}
+		}
+	}
+
+	.footer-block__partners .footer-partners__item {
+		max-width: 125px;
+	}
+	.footer-block__bar {
+		.comp-text-lato-r-1 {
+			text-align: center;
+		}
+	}
+}
+@media screen and (max-width: 480px) {
+	// UI
+	.comp-text-ondo-b-5 {
+		font-size: 35px;
+	}
+	.---gradient-btn {
+		height: 60px;
+	}
+	// HEAD
+	.--headContainer {
+		.--head-container__background {
+			img {
+				object-position: 55% top;
+			}
+		}
+	}
+	.head-block {
+		.head-block__info {
+			flex-flow: wrap;
+			justify-content: center;
+			row-gap: 20px;
+			.head-info__item {
+				&:nth-child(2) {
+					order: 1;
+				}
+			}
+		}
+	}
+	// BURGER MENU
+	.burgerMenu-btn {
+		img {
+			width: 30px;
+			height: 30px;
+		}
+	}
+	.burgerMenu-block {
+		a {
+			font-size: 23px;
+		}
+		.burgerMenu-block__item:last-child {
+			a {
+				font-size: 27px;
+				img {
+					width: 30px;
+					height: 30px;
+				}
+			}
+		}
+	}
+	// FAVORITE
+	.favorite-block__slider {
+		width: 95%;
+	}
+	// INFO
+	.info-block {
+		padding: 30px;
+	}
+	.info-block__btn {
+		width: 100%;
+	}
+	// TOP GAMES
+	.topGames-block__title {
+		.comp-text-ondo-b-5 {
+			font-size: 38px;
+			line-height: 50px;
+		}
+	}
+	.topGames-group__item {
+		.topGames-group-item__content {
+			.topGames-item-content__hashtags {
+				margin: 5px 0 35px 0;
+			}
+		}
+	}
+	// SOCIAL
+	.social-slider__item {
+		padding: 50px 30px 35px 30px;
+		.social-slider-item__bar {
+			.social-slider-item__author {
+				.social-item-author__image {
+					img {
+						width: 50px;
+						height: 50px;
+					}
+				}
+			}
+		}
+	}
+	.social-slider__pagination {
+		height: 21px;
+		.swiper-pagination-bullet {
+			width: 13px;
+			height: 13px;
+			&.swiper-pagination-bullet-active {
+				width: 21px;
+				height: 21px;
+			}
+		}
+	}
+	// FOOTER
+	.footer-block {
+		padding: 80px 0 45px 0;
+	}
+	.footer-block__content {
+		.footer-block-nav__wrapper {
+			flex-flow: wrap;
+			row-gap: 30px;
+			.footer-block__nav {
+				&:nth-child(2) {
+					order: 1;
+				}
+				row-gap: 10px;
+				.footer-nav__title {
+					margin: 0px 0 5px 0;
+					h2 {
+						font-size: 18px;
+					}
+				}
+				.footer-nav__link a {
+					font-size: 16px;
+				}
+			}
+		}
+		.footer-block__info {
+			.footer-info__logo {
+				img {
+					max-width: 50px;
+				}
+				.comp-text-ondo-b-3 {
+					font-size: 25px;
+				}
+			}
+		}
+	}
+	.footer-block__bar {
+		flex-wrap: wrap;
+		justify-content: center;
+		row-gap: 15px;
+		.comp-text-lato-r-1 {
+			font-size: 15px;
+		}
+	}
+}
+@media screen and (max-width: 360px) {
+	// INFO
+	.info-block {
+		.comp-text-ondo-b-4 {
+			font-size: 23px;
+		}
+	}
+	// TOP GAMES
+	.topGames-sort__btn {
+		.comp-text-ondo-b-1 {
+			font-size: 18px;
+		}
+	}
+	.topGames-block__title {
+		.comp-text-ondo-b-5 {
+			font-size: 33px;
+			line-height: 45px;
+		}
+	}
+	// FOOTER
+	.footer-block__content {
+		.footer-block__info {
+			.footer-info__text {
+				h2 {
+					text-align: justify;
+					font-size: 17px;
+					letter-spacing: 0.5px;
+					line-height: 30px;
+				}
+			}
+		}
+	}
+	.footer-block__partners {
+		column-gap: 25px;
+	}
+}
+@media screen and (max-width: 320px) {
+	// UI
+	.comp-text-ondo-b-5 {
+		font-size: 33px;
+	}
+	// INFO
+	.info-block {
+		.comp-text-ondo-b-4 {
+			font-size: 22px;
+		}
+	}
+	// TOP GAMES
+	.topGames-block__title {
+		.comp-text-ondo-b-5 {
+			font-size: 31px;
+		}
+	}
+	// SOCIAL
+	.social-slider-item__author {
+		.comp-text-lato-m-3 {
+			font-size: 15px;
+		}
+	}
+	// FOOTER
+	.footer-block__content {
+		.footer-block-nav__wrapper {
+			flex-flow: wrap column;
+			row-gap: 40px;
+			.footer-block__nav {
+				text-align: center;
+			}
+		}
+		.footer-block__info {
+			.footer-info__logo {
+				justify-content: center;
+				column-gap: 10px;
+			}
+			.footer-info__text {
+				h2 {
+					text-align: center;
+					letter-spacing: normal;
+				}
+			}
+		}
+	}
+	.footer-block__partners {
+		.footer-partners__item {
+			max-width: 115px;
+		}
+	}
+	.footer-block__bar {
+		.comp-text-lato-r-1 {
+			font-size: 12px;
+		}
+	}
+}

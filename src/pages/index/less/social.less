@@ -1,0 +1,123 @@
+.--socialContainer {
+	overflow: visible;
+}
+.social-block {
+}
+.social-block__slider {
+	padding: 40px 0 0 0;
+	.swiper-wrapper {
+		display: flex;
+		align-items: stretch;
+	}
+}
+.social-slider__item {
+	position: relative;
+	width: 50%;
+	height: auto;
+	display: flex;
+	flex-flow: wrap column;
+	padding: 60px 40px 35px 50px;
+	background-image: var(--greyGradient);
+	border-radius: 10px;
+	border: 1px solid var(--lightPurple);
+
+	.social-slider-item__decoration {
+		display: flex;
+		column-gap: 15px;
+		position: absolute;
+		top: 0%;
+		transform: translateY(-50%);
+		right: 45px;
+		img {
+			width: 40px;
+			height: auto;
+		}
+	}
+	.social-slider-item__rating {
+		display: flex;
+		column-gap: 3px;
+	}
+	.social-slider-item__text {
+		flex-grow: 1;
+		display: flex;
+		flex-flow: wrap column;
+		margin: 10px 0 25px 0;
+		line-height: 25px;
+		&::after {
+			display: inline-block;
+			content: '';
+			height: 1px;
+			margin: 10px 0 0 0;
+			border-radius: 10px;
+			background-color: rgba(255, 255, 255, 0.5);
+		}
+		h2 {
+			flex-grow: 1;
+			max-height: 125px;
+			overflow: auto;
+			font-size: 15px;
+
+			&::-webkit-scrollbar {
+				width: 4px;
+				background-color: transparent;
+				border-radius: 5px;
+			}
+			&::-webkit-scrollbar-thumb {
+				background-color: var(--darkGrey);
+				border-radius: 5px;
+			}
+		}
+	}
+	.social-slider-item__bar {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+
+		.social-slider-item__author {
+			display: flex;
+			align-items: center;
+			column-gap: 10px;
+
+			.social-item-author__image {
+				img {
+					width: 60px;
+					height: 60px;
+				}
+			}
+			.social-item-author__info {
+			}
+		}
+		.social-slider-author__verified {
+			display: flex;
+			column-gap: 5px;
+			img {
+				width: 24px;
+				height: 24px;
+			}
+		}
+	}
+}
+
+.social-slider__pagination {
+	height: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 5px;
+	margin: 40px 0 0 0;
+	.swiper-pagination-bullet {
+		transition: 0.1s linear;
+		width: 17px;
+		height: 17px;
+		background-color: white;
+		opacity: 1;
+		&.swiper-pagination-bullet-active {
+			width: 24px;
+			height: 24px;
+			background-image: var(--purpleGradient);
+		}
+	}
+}
+.--none {
+	display: none;
+}

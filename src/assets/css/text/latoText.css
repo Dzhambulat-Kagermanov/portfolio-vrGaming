@@ -1,0 +1,60 @@
+/* REGULAR */
+.comp-text-lato-r {
+	font-family: LatoR;
+	font-weight: 400;
+	color: inherit;
+	text-align: inherit;
+	text-transform: inherit;
+	line-height: inherit;
+	letter-spacing: inherit;
+	text-decoration: inherit;
+	text-shadow: inherit;
+}
+.comp-text-lato-r-1 {
+	font-size: 16px;
+}
+.comp-text-lato-r-2 {
+	font-size: 18px;
+}
+/* MEDIUM */
+.comp-text-lato-m {
+	font-family: LatoM;
+	font-weight: 500;
+	color: inherit;
+	text-align: inherit;
+	text-transform: inherit;
+	line-height: inherit;
+	letter-spacing: inherit;
+	text-decoration: inherit;
+	text-shadow: inherit;
+}
+.comp-text-lato-m-1 {
+	font-size: 10px;
+}
+.comp-text-lato-m-2 {
+	font-size: 14px;
+}
+.comp-text-lato-m-3 {
+	font-size: 18px;
+}
+.comp-text-lato-m-4 {
+	font-size: 20px;
+}
+.comp-text-lato-m-5 {
+	font-size: 24px;
+}
+/* BOLD */
+.comp-text-lato-b {
+	font-family: LatoB;
+	font-weight: 700;
+	color: inherit;
+	text-align: inherit;
+	text-transform: inherit;
+	line-height: inherit;
+	letter-spacing: inherit;
+	text-decoration: inherit;
+	text-shadow: inherit;
+}
+.comp-text-lato-b-1 {
+	font-size: 18px;
+}

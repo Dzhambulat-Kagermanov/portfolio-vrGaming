@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+ul,
+ol {
+	list-style: none;
+}
+body {
+	min-height: 100vh;
+	line-height: 1.5;
+}
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+	line-height: 1.1;
+}
+h1,
+h2,
+h3,
+h4 {
+	text-wrap: balance;
+}
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+	color: currentColor;
+}
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+textarea:not([rows]) {
+	min-height: 10em;
+}
+:target {
+	scroll-margin-block: 5ex;
+}
+span {
+	font: inherit;
+	color: inherit;
+	text-align: inherit;
+	line-height: inherit;
+	text-transform: inherit;
+	letter-spacing: inherit;
+}
+button {
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+}
+main,
+nav,
+header,
+footer,
+section {
+	display: contents;
+}
+a {
+	display: block;
+	text-decoration: none;
+	color: black;
+}

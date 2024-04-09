@@ -1,0 +1,9 @@
+/* MAIN */
+@import url('./main/reset.css');
+@import url('./main/fonts.css');
+@import url('./main/main.css');
+@import url('./main/adaptive.css');
+/* OTHER */
+@import url('./text/ondoText.css');
+@import url('./text/latoText.css');
+@import url('./effects/texEffects.css');
